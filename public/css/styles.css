@@ -1,0 +1,138 @@
+html, body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div.welcome{
+    height: 100%;
+    background-color: black;
+    padding: 2em 2em;
+    overflow: hidden;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.navBar a{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.openbtn{
+    margin-right: 5.5em;
+}
+
+.intro, .artfolio{
+    height: 100%;
+    display: inline-block;
+}
+
+.intro{
+    width: 65%;
+}
+
+.int1{
+    margin: 1em;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    letter-spacing: 0.001em;
+}
+
+.indent-intro{
+    display: inherit;
+    flex-direction: column;
+    height: 40%;
+    justify-content: flex-end;
+    padding-left: 1em;
+    border-left: solid white;
+}
+
+.intro-name{
+    font-size: 3vw;
+}
+
+.intro-para{
+    font-size: 2vw;
+    line-height: 1.1em;
+}
+
+.artfolio{
+    margin-top: 1.5em;
+    width: 35%;
+    padding-top: 1.5rem;
+    float: right;
+}
+
+.flexB{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-in{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+/*Overlay*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 3vw;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 27px;
+    right: 55px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
