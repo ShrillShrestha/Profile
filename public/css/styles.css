@@ -29,6 +29,11 @@ div.welcome{
     margin-right: 5.5em;
 }
 
+.row{
+    display: flex;
+    height: 100%;
+}
+
 .intro, .artfolio{
     height: 100%;
     display: inline-block;
@@ -36,9 +41,6 @@ div.welcome{
 
 .intro{
     width: 65%;
-}
-
-.int1{
     margin: 1em;
     display: flex;
     height: 100%;
@@ -70,10 +72,9 @@ div.welcome{
     margin-top: 1.5em;
     width: 35%;
     padding-top: 1.5rem;
-    float: right;
 }
 
-.flexB{
+.flexB, .flexB1{
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -86,6 +87,16 @@ div.welcome{
     display: block;
 }
 
+.iconTab i{
+    margin-left: 1em;
+    font-size: 3vw;
+}
+
+.iconTab a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /*Overlay*/
 .overlay {
     height: 100%;
@@ -94,8 +105,7 @@ div.welcome{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(255,255,255,0.98);
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -118,7 +128,7 @@ div.welcome{
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #111010;
   }
   
   .overlay .closebtn {
@@ -136,3 +146,40 @@ div.welcome{
     right: 35px;
     }
   }
+
+/*
+About page
+*/
+
+.flexB1{
+    margin-left: 1em;
+}
+
+.life-img{
+    height: 75%;
+    border-right: .5em solid rgba(255,255,255,0.98);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img2{
+    margin-right: 4em;
+}
+
+.para{
+    width: 75%;
+    margin: auto;
+    color: #fff;
+}
+
+@media screen and (max-width: 575px){
+    .artfolio-abt{
+        width: 0;
+        display: none;
+    }
+
+    .intro-abt{
+        width: 100%;
+    }
+}
