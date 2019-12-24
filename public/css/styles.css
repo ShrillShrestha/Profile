@@ -183,3 +183,62 @@ About page
         width: 100%;
     }
 }
+
+/*
+Contact page
+*/
+
+.contactTab{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.cTab-in{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cTab-in span{
+    margin-left: .5em;
+}
+
+.contactTab i{
+    margin-left: 1em;
+    font-size: 3vw;
+}
+
+.contactTab a{
+    text-decoration: none;
+    color: inherit;
+    margin: .5em;
+}
+
+.cTab-in a span{
+    display: inline-block;
+    position: relative;
+}
+
+.cTab-in a span:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+ .cTab-in a span:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
