@@ -1,0 +1,20 @@
+<%- include("../partials/header") %>
+
+    <div class="blog-block">
+        <h1 class="blog-head">BLOGS</h1>
+        <hr>
+        <% if(foundBlogs.length === 0){ %>
+            <div class="blg">
+                    <h1> I am still writing <i class="fas fa-signature"></i>... </h1>
+            </div>
+        <% }else{ %>
+            <%foundBlogs.forEach(function(blog){%>
+                <div class="blg">
+                    <h1> <a href="<%= blog.url %>" target="_blank"><%= blog.title %> </a> </h1>
+                    <p> <%= blog.subtitle %> </p>
+                </div>
+            <%});%>
+        <% } %>
+    </div>
+    
+<%- include("../partials/footer") %>
